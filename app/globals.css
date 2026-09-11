@@ -1,1 +1,620 @@
-:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#24232a;background:#faf9f6;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #8660ed;outline-offset:4px}main{max-width:1260px;margin:auto;padding:0 40px 24px}header{height:96px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #deddd9}.brand{font-size:2.2rem;font-weight:800;letter-spacing:-2px}.brand span,h1 span{color:#8256db;margin-left:6px}.edition,.eyebrow{font-size:.75rem;letter-spacing:2px;font-weight:800}.sound{border:1px solid #d9d8d4;background:transparent;padding:10px 16px;border-radius:24px}.intro{display:flex;justify-content:space-between;align-items:flex-end;padding:42px 0 34px}.eyebrow{color:#706278;margin:0 0 17px}.intro h1{font-size:3.5rem;line-height:1.02;letter-spacing:-3px;margin:0}.description{font-size:1rem;line-height:1.75;color:#6c6972}.game{display:grid;grid-template-columns:280px 1fr;border:1px solid #dedbdc;border-radius:24px;overflow:hidden;box-shadow:0 10px 36px #25202f0a}aside{padding:28px;background:#efebf6;border-right:1px solid #dedbdc}.roundLabel{font-size:.75rem;font-weight:800;letter-spacing:1.2px;display:flex;justify-content:space-between}.roundLabel span{color:#7a6c89}aside h2{font-size:2rem;line-height:1.15;letter-spacing:-1px;margin:24px 0}.mystery{height:150px;background:#e5ddef;border:1px dashed #c1b1d2;border-radius:15px;display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:4.5rem;font-weight:600;color:#9983b0}.mystery span{font-size:.7rem;letter-spacing:1.2px;font-weight:800;margin-top:7px}aside p{font-size:.9rem;line-height:1.65;color:#756a80}.rules{font-size:.85rem;line-height:2.3;border-top:1px solid #d9d0e4;padding-top:15px;margin-top:20px}.rules span{color:#9076a9;font-size:.75rem;margin-right:12px}.demoNote{font-size:.75rem!important;margin-bottom:0}.play{background:#fff;padding:22px 26px 0;min-width:0}.toolbar{display:flex;justify-content:space-between;align-items:center}.toolbar>div:first-child{font-size:.75rem;letter-spacing:1.5px;font-weight:800;display:flex;align-items:center;gap:8px}.liveDot{width:7px;height:7px;background:#946ec8;border-radius:50%}.timer{display:flex;gap:7px;align-items:baseline}.timer strong{font-size:2rem}.timer small{font-size:.7rem;color:#89838c;font-weight:800}.timeTrack{height:3px;background:#efedf1;margin:13px 0 21px;border-radius:3px;overflow:hidden}.timeTrack div{height:100%;background:#b59ad9;transition:width .1s linear}.timeTrack div.urgent{background:#e87969}.boardWrap{position:relative}.board{display:grid;grid-template-columns:repeat(9,1fr);gap:12px 16px;padding:3px 0 10px}.bubble{aspect-ratio:1;border-radius:50%;border:1px solid #d6cbdc;background:radial-gradient(ellipse at 32% 23%,#fff 0%,#ffffffdb 8%,#f8f3fd70 20%,#e7dff073 43%,#d5c7e5a6 75%,#ede5f6 86%);box-shadow:inset 2px 3px 5px #fff,inset -3px -4px 5px #b9a6ca80,0 3px 5px #33223f10;position:relative;transition:transform .15s,opacity .15s;min-width:0}.bubble:after{content:"";position:absolute;inset:9%;border:1px solid #ffffffa0;border-radius:50%}.bubble:not(:disabled):hover{transform:scale(1.07);filter:brightness(1.04)}.bubble.popped{background:#f2eff5;box-shadow:inset 1px 2px 4px #a899ba40;opacity:.48;transform:scale(.87)}.bubble.popped:after{inset:25%;border-color:#cfc4d9;border-style:dashed}.bubble:disabled{cursor:default}.startPanel{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#ffffffa8;backdrop-filter:blur(3px);border-radius:15px;text-align:center}.pill{font-size:.7rem;letter-spacing:1.4px;background:#fff;border:1px solid #e6e1ec;padding:9px 13px;border-radius:30px;font-weight:800}.startPanel h2{font-size:2.3rem;line-height:1.1;letter-spacing:-1.5px;margin:20px 0 10px}.startPanel p{color:#77707c;margin:0 0 22px}.primary{border:0;background:#d0fa73;border-radius:11px;padding:16px 25px;font-weight:800;min-width:190px;box-shadow:0 4px 0 #a7cb57}.primary:hover{background:#c2ee60}.primary span{margin-left:30px}.boardBottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eeebf0;margin-top:14px;padding:15px 0;font-size:.8rem;color:#8a828f}.boardBottom b{color:#302736;margin-right:5px}.boardBottom button,.secondary{border:0;background:none;color:#6c5d7b}footer{display:flex;justify-content:space-between;color:#939096;font-size:.8rem;padding:23px 0}footer span:last-child{font-size:.7rem;letter-spacing:1.3px}.modalBackdrop{position:fixed;inset:0;background:#20142caa;backdrop-filter:blur(7px);display:grid;place-items:center;padding:16px;z-index:10}.modal{width:400px;max-width:100%;padding:28px;border:1px solid #ded4e8;border-radius:24px;text-align:center;background:#faf8ff}.resultArt{height:210px;border-radius:14px;background:#e6dcef;display:grid;place-items:center;color:#72558a;margin-bottom:24px;overflow:hidden}.resultArt img{width:100%;height:100%;object-fit:contain}.modal h2{font-size:1.9rem;margin:8px 0}.modal>p:not(.eyebrow){line-height:1.6}.resultButton{width:100%;margin:12px 0}.secondary{padding:10px;font-size:.85rem}@media(max-width:760px){main{padding:0 18px 18px}header{height:76px}.edition{display:none}.intro{display:block;padding:28px 0 24px}.intro h1{font-size:2.6rem}.description{font-size:.9rem;margin-top:18px}.game{grid-template-columns:1fr}aside{padding:18px 20px;border-right:0;border-bottom:1px solid #dedbdc}aside h2,aside .mystery,aside>p:not(.demoNote),.rules{display:none}.demoNote{margin:10px 0 0}.play{padding:15px 14px 0}.board{gap:8px;grid-template-columns:repeat(7,1fr)}.startPanel h2{font-size:1.9rem}.startPanel p{font-size:.85rem}footer span:last-child{display:none}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Patrick+Hand&display=swap');
+
+:root {
+  color: #191714;
+  background: #ded8ca;
+  font-family: "Patrick Hand", "Comic Sans MS", cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: repeating-linear-gradient(#eee9de 0 39px, #a9bac4 40px, #eee9de 41px);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+.paper {
+  position: relative;
+  width: min(1180px, calc(100% - 48px));
+  min-height: 760px;
+  margin: 36px auto;
+  padding: 38px 50px;
+  background: #f8f3e8;
+  border: 3px solid #191714;
+  border-radius: 38px 52px 34px 46px;
+  box-shadow: 10px 12px 0 #191714, 0 30px 90px #241e1624;
+  overflow: hidden;
+}
+
+.paper:before,
+.paper:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #8398a4;
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.paper:before {
+  top: 31%;
+}
+
+.paper:after {
+  top: 67%;
+}
+
+.titleBlock {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.titleBlock p,
+.miniTitle small {
+  font-size: 0.78rem;
+  letter-spacing: 0.4em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.titleBlock h1 {
+  font: 700 clamp(3.7rem, 7vw, 5.8rem)/0.9 "Caveat", cursive;
+  margin: 4px 0;
+}
+
+.titleBlock > span {
+  display: block;
+  width: 330px;
+  max-width: 65%;
+  height: 10px;
+  margin: 12px auto 22px;
+  border-top: 4px solid #191714;
+  border-radius: 50%;
+  transform: rotate(-1deg);
+}
+
+.selectionLayout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 210px minmax(330px, 460px) 210px;
+  gap: 52px;
+  align-items: center;
+  justify-content: center;
+}
+
+.characterList > p,
+.targetCard > p:first-child {
+  font: 700 1rem "Caveat", cursive;
+  text-decoration: underline;
+  margin: 0 0 12px;
+}
+
+.characterList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.characterList button {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  text-align: left;
+  border: 2px solid transparent;
+  background: transparent;
+  padding: 10px 13px;
+  border-radius: 12px;
+  cursor: pointer;
+  font: 600 1.35rem "Caveat", cursive;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.characterList button span {
+  font: 500 0.76rem "Patrick Hand", cursive;
+  opacity: 0.55;
+}
+
+.characterList button:hover {
+  transform: translateX(5px);
+}
+
+.characterList button.selected {
+  background: #191714;
+  color: #f8f3e8;
+  border-color: #191714;
+  transform: rotate(-1deg) translateX(8px);
+  box-shadow: 4px 5px 0 #8f8677;
+}
+
+.characterPreview {
+  text-align: center;
+}
+
+.photoFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 16px;
+  background: #f4eee2;
+  border: 5px solid #191714;
+  border-radius: 18px;
+  box-shadow: 6px 8px 0 #191714;
+  transform: rotate(0.6deg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.caption p {
+  margin: 25px 0 0;
+  font-size: 0.9rem;
+}
+
+.caption h2 {
+  font: 700 2.1rem "Caveat", cursive;
+  margin: -2px 0 0;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.selectionNote,
+.instructions {
+  font: 600 1.3rem/1.25 "Caveat", cursive;
+  transform: rotate(1deg);
+}
+
+.selectionNote p,
+.instructions p {
+  margin: 0 0 28px;
+}
+
+.selectionNote button,
+.instructions button,
+.again,
+.gameHeader > button {
+  border: 2px solid #191714;
+  background: #f8f3e8;
+  padding: 10px 16px;
+  border-radius: 48% 42% 45% 40%;
+  box-shadow: 3px 4px 0 #191714;
+  cursor: pointer;
+}
+
+.selectionNote button:hover,
+.instructions button:hover,
+.again:hover {
+  transform: translateY(-2px);
+}
+
+.gamePage {
+  padding-top: 28px;
+}
+
+.gameHeader {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.gameHeader > button {
+  justify-self: start;
+}
+
+.miniTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.miniTitle strong {
+  font: 700 2.5rem "Caveat", cursive;
+}
+
+.timer {
+  justify-self: end;
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  font-size: 1rem;
+}
+
+.timer span {
+  font: 700 3rem "Caveat", cursive;
+}
+
+.timer.urgent {
+  color: #a72a20;
+}
+
+.gameLayout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 190px minmax(390px, 540px) 190px;
+  gap: 45px;
+  justify-content: center;
+  align-items: start;
+}
+
+.targetCard {
+  text-align: center;
+  padding-top: 36px;
+}
+
+.targetPhoto {
+  position: relative;
+  width: 160px;
+  aspect-ratio: 1;
+  margin: auto;
+  border: 3px solid #191714;
+  border-radius: 14px;
+  background: #f4eee2;
+  box-shadow: 4px 5px 0 #191714;
+  overflow: hidden;
+  transform: rotate(-1deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.targetPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.targetCard h2 {
+  font: 700 1.9rem "Caveat", cursive;
+  margin: 14px 0 8px;
+}
+
+.targetCard .tiny {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.bubbleSheet {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 17px;
+  aspect-ratio: 1;
+  padding: 27px;
+  background: #f4eee2;
+  border: 5px solid #191714;
+  border-radius: 7px 15px 5px 11px;
+  box-shadow: 6px 8px 0 #191714;
+  transform: rotate(0.35deg);
+}
+
+.bubble {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 3px solid #191714;
+  border-radius: 50%;
+  background: radial-gradient(circle at 33% 26%, #fff 0 7%, #eee6d8 10% 45%, #d2c8b8 70%, #f7f1e7 73%);
+  box-shadow: inset -4px -5px 0 #17161620, 2px 3px 0 #191714;
+  cursor: pointer;
+  transition: transform 0.12s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.bubble:nth-child(3n) {
+  transform: rotate(3deg);
+}
+
+.bubble:nth-child(4n) {
+  transform: rotate(-3deg);
+}
+
+.bubble:not(:disabled):hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.bubble.popped {
+  border-style: dashed;
+  background: #dfd5c5;
+  box-shadow: inset 4px 5px 0 #8a8070;
+  transform: scale(0.82);
+}
+
+.bubble.revealed {
+  border-style: solid;
+  transform: scale(1.08);
+  box-shadow: 0 0 0 5px #f8f3e8, 0 0 0 8px #191714;
+  background: #f4eee2;
+}
+
+.bubble img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 4px;
+}
+
+.statusLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 26px 4px 12px;
+  font: 600 1.15rem "Caveat", cursive;
+}
+
+.statusLine b {
+  font: 500 0.8rem "Patrick Hand", cursive;
+  letter-spacing: 0.08em;
+}
+
+.again {
+  display: block;
+  margin: 12px auto;
+}
+
+.instructions {
+  padding-top: 85px;
+}
+
+.gamePage footer {
+  text-align: center;
+  margin-top: 30px;
+  font: 700 1.35rem "Caveat", cursive;
+  transform: rotate(-1deg);
+}
+
+/* Pop-out found modal */
+.popOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(25, 23, 20, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.characterPopCard {
+  background: #f8f3e8;
+  border: 4px solid #191714;
+  border-radius: 26px;
+  box-shadow: 10px 12px 0 #191714;
+  padding: 26px 30px;
+  max-width: min(92vw, 400px);
+  width: 100%;
+  text-align: center;
+  animation: popOut 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.popPhotoFrame {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 14px;
+  border: 3px solid #191714;
+  border-radius: 16px;
+  background: #f4eee2;
+  box-shadow: 4px 5px 0 #191714;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.popPhotoFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.popTitle {
+  font: 700 2.2rem "Caveat", cursive;
+  margin: 0 0 6px;
+  color: #191714;
+}
+
+.commentBox {
+  font: 700 1.45rem/1.3 "Caveat", cursive;
+  color: #191714;
+  margin: 8px 0 18px;
+  background: #eee6d8;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 2px dashed #191714;
+}
+
+.popAgainBtn {
+  border: 2px solid #191714;
+  background: #191714;
+  color: #f8f3e8;
+  padding: 10px 24px;
+  font: 700 1.25rem "Caveat", cursive;
+  border-radius: 30px;
+  box-shadow: 3px 4px 0 #8f8677;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.popAgainBtn:hover {
+  transform: translateY(-2px);
+  background: #332f29;
+}
+
+@keyframes popOut {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 920px) {
+  .paper {
+    padding: 32px 28px;
+  }
+  .selectionLayout {
+    grid-template-columns: 180px minmax(300px, 420px);
+    gap: 35px;
+  }
+  .selectionNote {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  .selectionNote p {
+    margin: 0;
+  }
+  .gameLayout {
+    grid-template-columns: 160px minmax(350px, 500px);
+    gap: 32px;
+  }
+  .instructions {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 0;
+  }
+  .instructions p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .paper {
+    width: calc(100% - 20px);
+    margin: 12px auto;
+    padding: 25px 16px;
+    min-height: calc(100vh - 24px);
+    border-radius: 25px;
+    box-shadow: 5px 7px 0 #191714;
+  }
+  .titleBlock h1 {
+    font-size: 3.5rem;
+  }
+  .selectionLayout,
+  .gameLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .characterList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .characterList > p {
+    grid-column: 1 / -1;
+  }
+  .characterList button {
+    font-size: 1.05rem;
+    padding: 8px;
+  }
+  .characterPreview {
+    width: 86%;
+  }
+  .selectionNote {
+    display: grid;
+    text-align: center;
+    gap: 8px;
+  }
+  .selectionNote p {
+    margin: 0;
+  }
+  .gameHeader {
+    grid-template-columns: 1fr 1fr;
+  }
+  .miniTitle {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .gameHeader > button {
+    grid-row: 2;
+  }
+  .timer {
+    grid-row: 2;
+  }
+  .targetCard {
+    display: grid;
+    grid-template-columns: 78px 1fr;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+  }
+  .targetPhoto {
+    width: 70px;
+    grid-row: 1 / 4;
+  }
+  .targetCard > p:first-child,
+  .targetCard h2,
+  .targetCard .tiny {
+    margin: 0 0 0 14px;
+  }
+  .targetCard .tiny br {
+    display: none;
+  }
+  .boardColumn {
+    width: 100%;
+  }
+  .bubbleSheet {
+    gap: 9px;
+    padding: 16px;
+    border-width: 4px;
+  }
+  .bubble {
+    border-width: 2px;
+  }
+  .instructions {
+    display: none;
+  }
+  .statusLine {
+    font-size: 1rem;
+  }
+  .gamePage footer {
+    font-size: 1.1rem;
+  }
+}
